@@ -14,6 +14,7 @@ Math.log(1);            // = 0 natural logarithm
 Math.exp(1);            // = 2.7182pow(E,x)
 Math.random();          // random number between 0 and 1
 Math.floor(Math.random() * 5) + 1;  // random integer, from 1 to 5
+
 /*
 Constants like Math.PI:
 E, PI, SQRT2, SQRT1_2, LN2, LN10, LOG2E, Log10E
