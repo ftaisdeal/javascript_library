@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Query String</title>
+  <script>
+    function getQueryString() {
+      const urlParams = new URLSearchParams(location.search);
+      for (const [key, value] of urlParams) {
+        document.getElementById("display").innerHTML += (`${key}:${value}<br>`);
+      }
+    }
+  </script>
+</head>
+
+<body onload="getQueryString()">
+
+</body>
+
+<div id="display"></div>
+
+</html>
