@@ -22,19 +22,19 @@ console.log(myMap.size);
 
 // Example 2
 let contacts = new Map()
-contacts.set('Jessie', { phone: "213-555-1234", address: "123 N 1st Ave" })
-contacts.has('Jessie') // true
-contacts.get('Hilary') // undefined
-contacts.set('Hilary', { phone: "617-555-4321", address: "321 S 2nd St" })
-contacts.get('Jessie') // {phone: "213-555-1234", address: "123 N 1st Ave"}
+contacts.set('Jerry', { phone: "213-555-1234", address: "123 N 1st Ave" })
+contacts.has('Jerry') // true
+contacts.get('Wendy') // undefined
+contacts.set('Wendy', { phone: "617-555-4321", address: "456 S 2nd St" })
+contacts.get('Jerry') // {phone: "213-555-1234", address: "123 N 1st Ave"}
 contacts.delete('Raymond') // false
-contacts.delete('Jessie') // true
+contacts.delete('Jerry') // true
 console.log(contacts.size) // 1
-console.log(contacts.get('Hilary'));
+console.log(contacts.get('Wendy'));
 
-let Hilary = contacts.get('Hilary');
-console.log(Hilary.phone);
-console.log(Hilary.address);
+let Wendy = contacts.get('Wendy');
+console.log(Wendy.phone);
+console.log(Wendy.address);
 
 
 // Example 3: Iteration over Maps
