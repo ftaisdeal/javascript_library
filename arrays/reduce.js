@@ -17,7 +17,7 @@ function myFunc(total, num) {
   return total - num;
 }
 
-var numbers = [175, 50, 25];
+let numbers = [175, 50, 25];
 
 console.log(`Reduce result: ${numbers.reduce(myFunc)}`);
 // 175 - 50 - 25
