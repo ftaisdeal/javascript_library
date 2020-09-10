@@ -22,6 +22,7 @@ finally {
 
 
 /*
+ERROR TYPES
 RangeError A number is "out of range"
 ReferenceError An illegal reference has occurred
 SyntaxError A syntax error has occurred
