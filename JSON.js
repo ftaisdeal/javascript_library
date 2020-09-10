@@ -1,4 +1,8 @@
-// This code will only work in a browser, because of the window.location and localStorage references
+/*
+Basic code is for transferring data from local storage to PHP.
+The code will only work in a browser, because of the window.location and
+localStorage references.
+*/
 
 var str = '{"names":[' + // create JSON object
   '{"first":"Hakuna","lastN":"Matata" },' +
