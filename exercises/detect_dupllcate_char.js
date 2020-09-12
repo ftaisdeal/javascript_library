@@ -2,7 +2,7 @@
 If any duplicate character is detected, return false.
 If no dupiicate characters are detected, return the string. */
 
-let detect_duplicate = function (string) {
+function detect_duplicate(string) {
 
   let test_array = [];
 
