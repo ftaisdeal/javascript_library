@@ -1,36 +1,22 @@
-// Objects
+/* Objects are hierarchical collections of name-value pairs that can contain
+strings, numbers, floats, booleans, arrays, and functions.
+*/
 
-// Example 1
-var test = { prop1: "this is prop 1", prop2: "this is prop 2" };
+// An object can be declared two different ways:
 
-test.prop1 = "this is prop 1" ? console.log("yes") : console.log("no");
+let ob1 = new Object(); // discouraged
 
-// Example 2
-var car = {
-  company: "Kia",
+let ob2 = {}; // preferred
+
+// Object literal syntax can be used to initialize an object in its entirety:
+var obj = {
+  name: 'Tracy',
+  role: 'student',
   details: {
-    color: "silver",
-    mileage: "27k",
-  },
-};
-
-console.log(
-  `Our car is a ${car.company}.  It is ${car.details.color}, and we have driven it about ${car.details.mileage} at this point.`
-);
-
-
-// Example 2
-var student = {                 // object name
-  firstName: "Jane",           // list of properties and values
-  lastName: "Doe",
-  age: 18,
-  height: 170,
-  fullName: function () {     // object function
-    return this.firstName + " " + this.lastName;
+    sex: 'female',
+    grade: 10
   }
 };
-student.age = 19;           // setting value
-student['age']++;             // incrementing
-name = student.fullName();  // call object function
 
-console.log(name);
+console.log(obj.details.grade);
+console.log(obj['details']['grade']); // same as line above

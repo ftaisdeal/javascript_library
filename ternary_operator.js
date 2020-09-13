@@ -5,6 +5,8 @@ followed by a colon (:), and finally the expression to execute if the condition 
 This operator is frequently used as a shortcut for the if statement.
 */
 
+var allowed = (age > 18) ? 'yes' : 'no';
+
 function getFee(isMember) {
   return (isMember ? '$2.00' : '$10.00');
 }
