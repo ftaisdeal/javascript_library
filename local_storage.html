@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Local Storage</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <script>
     function setLocalStorage(key, value) {
       localStorage.setItem(key, value);
@@ -24,13 +25,21 @@
 
 <body>
 
-  <p>
-    <button onclick="setLocalStorage('key', 'value')">set</button>
-    <button onclick="showLocalStorage('kitty')">get</button>
-    <button onclick="removeLocalStorage('kitty')">remove</button>
-  </p>
+  <div id="container">
 
-  <div id="display"></div>
+    <h1>Local Storage</h1>
+
+    Set a key-value pair in local storage of kitty: orange
+
+    <p>
+      <button onclick="setLocalStorage('kitty', 'orange' )">set</button>
+      <button onclick="showLocalStorage('kitty')">get / show</button>
+      <button onclick="removeLocalStorage('kitty')">remove</button>
+    </p>
+
+    <div id="display"></div>
+
+  </div>
 
 </body>
 

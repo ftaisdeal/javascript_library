@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Query String</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <script>
     function getQueryString() {
       const urlParams = new URLSearchParams(location.search);
@@ -19,6 +20,16 @@
 
 </body>
 
-<div id="display"></div>
+<div id="container">
+
+  <h1>Query Strings</h1>
+
+  <p>Add a query string to the URL of this document, then load.</p>
+
+  <p>The query string key-value pairs will appear below.</p>
+
+  <div id="display"></div>
+
+</div>
 
 </html>
