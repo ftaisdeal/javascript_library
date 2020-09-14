@@ -8,4 +8,4 @@ function sayBye(user) {
 
 const test = "test";
 
-export { sayHi, sayBye, test }; // a list of exported variables
+export { sayHi, sayBye, test }; // a list of exported functions, variables
