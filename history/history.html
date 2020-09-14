@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage</title>
+  <script>
+    function setLocalStorage(key, value) {
+      localStorage.setItem(key, value);
+    }
+
+    function showLocalStorage(key) {
+      item = localStorage.getItem(key);
+      document.getElementById("display").innerHTML = item;
+    }
+
+    function removeLocalStorage(key) {
+      localStorage.removeItem(key);
+    }
+
+  </script>
+</head>
+
+<body>
+
+  <p>
+    <button onclick="setLocalStorage('key', 'value')">set</button>
+    <button onclick="showLocalStorage('kitty')">get</button>
+    <button onclick="removeLocalStorage('kitty')">remove</button>
+  </p>
+
+  <div id="display"></div>
+
+</body>
+
+</html>
