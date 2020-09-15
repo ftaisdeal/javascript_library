@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    function setSessionStorage(key, value) {
+      sessionStorage.setItem(key, value);
+    }
+
+    function showSessionStorage(key) {
+      item = sessionStorage.getItem(key);
+      document.getElementById("display").innerHTML = item;
+    }
+
+    function removeSessionStorage(key) {
+      sessionStorage.removeItem(key);
+    }
+  </script>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <h1>Session Storage</h1>
+
+    Set a key-value pair in local storage of kitty: orange
+
+    <p>
+      <button onclick="setSessionStorage('kitty', 'orange' )">set</button>
+      <button onclick="showSessionStorage('kitty')">get / show</button>
+      <button onclick="removeSessionStorage('kitty')">remove</button>
+    </p>
+
+    <div id="display"></div>
+
+  </div>
+
+</body>
+
+</html>
