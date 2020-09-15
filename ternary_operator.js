@@ -5,17 +5,20 @@ followed by a colon (:), and finally the expression to execute if the condition 
 This operator is frequently used as a shortcut for the if statement.
 */
 
-var allowed = (age > 18) ? 'yes' : 'no';
+const age = 21;
 
-function getFee(isMember) {
-  return (isMember ? '$2.00' : '$10.00');
+let allowed = (age > 18) ? true : false;
+
+function getFee(allowed) {
+  return (allowed ? '$2.00' : '$10.00');
 }
 
-console.log(getFee(true));
-// expected output: "$2.00"
+console.log(getFee(allowed));
 
-console.log(getFee(false));
-// expected output: "$10.00"
 
-console.log(getFee(null));
-// expected output: "$10.00"
+let message = (age < 3) ? 'Hi, baby!' :
+  (age < 18) ? 'Hello!' :
+    (age < 100) ? 'Greetings!' :
+      'What an unusual age!';
+
+console.log(message);
