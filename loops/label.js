@@ -1,4 +1,5 @@
-// A "label" allows you to break out of an inner loop
+// A "label" allows you to break out of an inner loop.
+// The label can be on its own line.
 
 outer: for (let i = 0; i < 3; i++) {
 
