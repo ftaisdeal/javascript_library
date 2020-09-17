@@ -1,11 +1,5 @@
-// This is a simple example of a function having a return value of another function.
-
-function log() {
-  console.log('function called');
+function defaultParameters(text, code = '[no code included]') {
+  console.log('The text: ' + text + '\nThe code: ' + code)
 }
 
-function test() {
-  return log();
-}
-
-test();
+defaultParameters('some text');
