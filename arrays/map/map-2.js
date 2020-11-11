@@ -12,9 +12,9 @@ var officersIds1 = officers.map(function (officer) {
   return officer.id;
 });
 
+console.log(officersIds1);
+
 // Version 2 - compact
 const officersIds2 = officers.map(officer => officer.id);
-
-console.log(officersIds1);
 
 console.log(officersIds2);

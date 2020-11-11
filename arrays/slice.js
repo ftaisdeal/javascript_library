@@ -16,6 +16,5 @@ console.log(animals.slice(0, 4));
 // Expected output: [ 0, 1, 2, 3 ]
 
 const new_array = animals.slice(1, 5);
-
 console.log(new_array);
 // Expected output: [ 1, 2, 3, 4 ]
