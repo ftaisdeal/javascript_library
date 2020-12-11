@@ -19,18 +19,18 @@ const generateBeads = function (colors /* array */, size /* number */) {
   beads = [];
   count = 0;
 
-  for (let i = 0; i < size; i++) {
+  beads.push(colors[0]);
+
+  for (let i = 1; i < size; i++) {
 
     if (count >= colors.length) { // Reset to beginning of colors array
       count = 0;
     }
 
-    if ((i != 1) && (colors[count] != beads[i - 1])) { // Prevent repetition of adjacent color
+    if (colors[count] != beads[i - 1]) { // Prevent repetition of adjacent color
       beads.push(colors[count]);
-    }
-
-    if (1) { // Prevent repetition of three colors
-
+    } else {
+      i--;
     }
 
     count++;
