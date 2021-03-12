@@ -12,8 +12,13 @@
  *
  * @param colors - An array of unique Strings where each string represents a bead color.
  * @param size - The length of the bracelet to be constructed.
- * @return - An array of colors indicating the final order of beads that should be used to construct a bracelet.
+ * @return - An array of colors indicating the final order of beads that should be used
+ * to construct a bracelet.
  */
+
+// Write funtion to detect repetition of sequence of three beads and run this function
+// repeatedly within the for loop.
+
 const generateBeads = function (colors /* array */, size /* number */) {
 
   beads = [];
@@ -42,3 +47,10 @@ const generateBeads = function (colors /* array */, size /* number */) {
 };
 
 console.log(generateBeads(["Red", "Red", "Red", "Green", "Yellow", "Blue", "Blue", "Black"], 10));
+
+let arr1 = [];
+let arr2 = [];
+
+if (arr1 == arr2) {
+  console.log("equal");
+}
