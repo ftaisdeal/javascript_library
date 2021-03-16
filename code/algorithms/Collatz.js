@@ -1,40 +1,34 @@
-let count = 0;
+function callCollatz(x) {
+  let count = 0;
 
-function Collatz(x) {
-
-  if (x % 2 === 0) {
-    x = x / 2;
-    count++;
-  } else {
-    x = x * 3 + 1;
-    count++;
+  function Collatz(x) {
+    if (x % 2 === 0) {
+      x = x / 2;
+      count++;
+    } else {
+      x = x * 3 + 1;
+      count++;
+    }
+    if (x > 1) {
+      Collatz(x);
+    }
+    return count;
   }
 
-  if (x > 1) {
-    Collatz(x);
-  }
-
-  //console.log(x);
-  return count;
+  return Collatz(x);
 }
 
 let longest = 0;
+let winner;
 
-for (i = 13; i > 1; i--) {
-  console.log(Collatz(i));
+for (i = 10000; i > 2; i--) {
+  //console.log(callCollatz(i));
 
-  temp = Collatz(i);
-
-  if (temp > longest) {
-    longest = i;
+  if (callCollatz(i) > longest) {
+    longest = callCollatz(i);
+    winner = i;
   }
 
 }
 
-console.log(longest);
-
-
-
-// Get the function to spit out the iterative results
-// Count how many results and record the number used
-// Build a for loop that counts down from 1 million and records the number with the longest string of numbers
+console.log(`${i} is the winner, with a string of numbers of length ${longest}.`);
