@@ -21,8 +21,7 @@ function callCollatz(x) {
 let longest = 0;
 let winner;
 
-for (i = 10000; i > 2; i--) {
-  //console.log(callCollatz(i));
+for (i = 1000000; i > 2; i--) {
 
   if (callCollatz(i) > longest) {
     longest = callCollatz(i);
@@ -31,4 +30,4 @@ for (i = 10000; i > 2; i--) {
 
 }
 
-console.log(`${i} is the winner, with a string of numbers of length ${longest}.`);
+console.log(`${winner} is the winner, with a string of numbers of length ${longest}.`);
