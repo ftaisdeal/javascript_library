@@ -14,12 +14,12 @@ var a = 1;
 {
   var a = 2;
 }
-console.log(a);
+console.log(a); // Outputs 2
 
 // Example 2
 let b = 1;
 {
   let b = 2;
-  console.log(b);
+  console.log(b); // Outputs 2
 }
-console.log(b);
+console.log(b); // Outputs 1
