@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Table</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button onclick="addRow()">add row</button>
+
+  <table id="table">
+    <th id="header">table</th>
+    <tr>
+      <td>row</td>
+    </tr>
+  </table>
+
+  <script>
+    function addRow() {
+      let table = document.getElementById("table");
+      let row = table.insertRow(0);
+      let cell0 = row.insertCell(0);
+      let cell1 = row.insertCell(1);
+
+      cell0.innerHTML = "cell 0";
+      cell1.innerHTML = "cell 1";
+
+      let header = document.getElementById("header");
+      header.innerHTML = "HEADER";
+    }
+  </script>
+
+</body>
+
+</html>

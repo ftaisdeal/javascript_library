@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM practice</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    .title {
+      color: black;
+    }
+
+    .title_new {
+      color: gray;
+      letter-spacing: 1.5em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 id="title" class="title">Title</h1>
+    <button onclick="changeTitle()">click</button>
+    <p />
+    <input type="text" id="text" />
+    <button onclick="changeInputValue()">change</button>
+  </div>
+
+  <script>
+    function changeTitle() {
+      let title = document.getElementById("title");
+      title.innerHTML = "New Title";
+      title.classList.add('title_new');
+    }
+
+    function changeInputValue() {
+      let text = document.getElementById("text");
+      text.value = "test";
+    }
+  </script>
+
+</body>
+
+</html>
