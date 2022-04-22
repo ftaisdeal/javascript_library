@@ -16,7 +16,7 @@
  * to construct a bracelet.
  */
 
-// Write funtion to detect repetition of sequence of three beads and run this function
+// Write a funtion to detect repetition of sequence of three beads and run this function
 // repeatedly within the for loop.
 
 const generateBeads = function (colors /* array */, size /* number */) {
