@@ -8,7 +8,7 @@ function test(callback) {
 }
 
 function square(int) {
-  return int * int;
+  return int ** 2; // exponentiation operator to square the number
 }
 
 test(square);
