@@ -7,10 +7,10 @@ function test(callback) {
   result = callback(2);
 }
 
-function callback(int) {
-  return int;
+function square(int) {
+  return int * int;
 }
 
-test(callback);
+test(square);
 
 console.log(result);
