@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Zig Zag Table</title>
   <style>
     body {
+      padding-left: 20px;
       font-family: sans-serif;
       size: 1em;
     }
@@ -21,7 +22,7 @@
   <form>
     <label for="rows">rows</label> <input id="rows" type="number" name="rows" value="4" style="width: 2.5em;" />
     <label for="cols">cols</label> <input id="cols" type="number" name="cols" value="4" style="width: 2.5em;" />
-    <input type="submit" value="build" id="submit" onclick="createTable()" />
+    <input id="submit" type="submit" value="build" onclick="createTable()" />
   </form>
 
   <br />
@@ -48,20 +49,20 @@
           let c = r.insertCell(colIndex);
 
           if (colIndex == 0) {
-            // calculate values for the first column (from 1 to 4)
+            // Calculate values for the first column
             currentRow.push(rowIndex + 1);
             c.innerHTML = rowIndex + 1;
-          } else if (rowIndex === 0) {
-            // calculate columns for the first row
+          } else if (rowIndex == 0) {
+            // Calculate columns for the first row
             if (colIndex % 2 == 0) {
-              currentRow.push(rows * colIndex + 1); // 4 * 2 + 1 = 9
+              currentRow.push(rows * colIndex + 1);
               c.innerHTML = rows * colIndex + 1;
             } else {
               currentRow.push(rows * (colIndex + 1));
               c.innerHTML = (rows * (colIndex + 1));
             }
           } else {
-            // calculate the rest of the cells
+            // Calculate the rest of the cells
             if (colIndex % 2 == 0) {
               currentRow.push(matrix[rowIndex - 1][colIndex] + 1);
               c.innerHTML = matrix[rowIndex - 1][colIndex] + 1;
